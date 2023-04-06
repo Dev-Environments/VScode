@@ -1,2 +1,2 @@
-# VScode
-**This repo is only for Posting & Solving Issues Related to VScode for Android**
+# VScode for Android
+**You can Open/Close Issues and Request a Feature to improve app VScode for Android**

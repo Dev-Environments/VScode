@@ -1,0 +1,79 @@
+name: Bug report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues
+          required: true
+  - type: textarea
+    attributes:
+      label: OS/Platform Information
+      description: |
+        examples:
+          - **Platform**: Android mobile OR Any emulator/Virtual mobile
+          - **Model**: Samsung Galaxy A12
+          - **Android --version**: v12
+          - **Architecture**: arm64-v8a
+          - **VScode App version**: 1.0.3
+      value: |
+        - Platform:
+        - Model:
+        - Android --version:
+        - Architecture:
+        - VScode App version:
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: |
+        1. open VScode
+        2. install assets
+      value: |
+        1. 
+        2.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected
+      description: What should happen?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual
+      description: What actually happens?
+    validations:
+      required: true
+  - type: textarea
+    id: alert-dialog
+    attributes:
+      label: Alert Dialog
+      description: Did You encounter any Alert Dialog Box.
+  - type: textarea
+    attributes:
+      label: Screenshot/Video
+      description: Please include a screenshot, gif or screen recording of your issue.
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Does this issue happen in Previous Version or You a new user?
+      description: Please try Clearing App Data or Re-install App
+      options:
+        - label: I tried everything but same issue.
+          required: false
+        - label: I cannot Clearing app data because i am Old user.
+          required: false
+  - type: textarea
+    attributes:
+      label: Notes
+      description: Please include any addition notes that will help us resolve this issue.
+    validations:
+      required: false
